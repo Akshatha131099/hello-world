@@ -25,5 +25,10 @@ pipeline {
 				echo 'mvn docker'
 			}
 		}
+		stage('docker image') {
+			steps {
+				echo 'mvn docker image'
+			}
+		}
 	}
 }
