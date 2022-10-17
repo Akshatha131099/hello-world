@@ -5,7 +5,7 @@ pipeline {
 	}
 
 	stages {
-		stages ('Hello') {
+		stage ('Hello') {
 			steps {
 				git 'https://github.com/Akshatha131099/hello-world.git'
 			}
