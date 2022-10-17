@@ -1,11 +1,11 @@
 pipeline {
 	agent any
 	tools {
-	maven 'mvn'
+	maven 'maven'
 	}
 
 	stages {
-		stage ('hello') {
+		stage ('Hello') {
 			stops {
 				git 'https://github.com/Akshatha131099/hello-world.git'
 			}
