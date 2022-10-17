@@ -5,24 +5,24 @@ pipeline {
 	}
 
 	stages {
-		stage ('hello') {
-			stops {
+		stage ('Hello') {
+			steps {
 				git 'https://github.com/Akshatha131099/hello-world.git'
 			}
 		}
 		stage('compile') {
 			steps {
-				sh 'mvn clean package'
+				echo 'mvn clean package'
 			}
 		}
 		stage('deployment') {
 			steps {
-				sh 'mvn deploy'
+				echo 'mvn deploy'
 			}
 		}
 		stage('docker') {
 			steps {
-				sh 'mvn docker'
+				echo 'mvn docker'
 			}
 		}
 	}
